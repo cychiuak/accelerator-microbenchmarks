@@ -228,6 +228,7 @@ def multiple_iteration_get_metrics_from_trace(
     unique_pids = set([e["pid"] for e in marker_done_events])
     print(f"Unique PIDs: {unique_pids}")
     if not marker_done_events:
+        print("NO MARKER!! event found")
         event_matcher = re.compile(task)
 
         if "traceEvents" not in trace:
