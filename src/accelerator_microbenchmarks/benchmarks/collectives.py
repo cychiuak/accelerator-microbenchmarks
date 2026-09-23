@@ -333,6 +333,9 @@ class BaseCollectiveBenchmark(
       rank = len(first_replica_group)
 
       devices_per_chip = self.hardware_spec.devices_per_chip
+      print("first_replica_group is", first_replica_group)
+      print("rank is", rank)
+      print("devices_per_chip is", devices_per_chip)
       if (
           devices_per_chip > 1
           and first_replica_group
