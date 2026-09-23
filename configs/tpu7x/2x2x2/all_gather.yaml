@@ -2,8 +2,8 @@ benchmark:
   name: all_gather
   xprof_timing: true
   params:
-    warmup_tries: 2
-    num_runs: 5
+    warmup_tries: 5
+    num_runs: 20
     dtype: bfloat16
     mesh_shape: 4x2x2
   sweep:
