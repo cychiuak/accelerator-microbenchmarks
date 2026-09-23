@@ -345,6 +345,7 @@ class BaseCollectiveBenchmark(
         participating_ranks = max(rank - 1, 1)
         tf_multiplier = devices_per_chip
       else:
+        print("chose non-parallel")
         replica_group_type = "non-parallel"
         participating_ranks = max(rank - devices_per_chip, 1)
         tf_multiplier = 1
