@@ -140,6 +140,7 @@ spec:
                       uv venv /tmp/venv
                       source /tmp/venv/bin/activate
                       uv pip install .
+                      uv pip install jax==0.10.1 jaxlib==0.10.1 libtpu==0.0.41
 
                       echo "=== Executing Benchmark: ${CONFIG_PATH} ==="
                       mkdir -p /tmp/results
