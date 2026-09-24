@@ -336,6 +336,7 @@ class BaseCollectiveBenchmark(
       print("first_replica_group is", first_replica_group)
       print("rank is", rank)
       print("devices_per_chip is", devices_per_chip)
+      print("jax.devices() is", jax.devices())
       if (
           devices_per_chip > 1
           and first_replica_group
